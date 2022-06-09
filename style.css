@@ -1,0 +1,384 @@
+/*===============================IMPORT=============================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    /*background-image: url('https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');*/
+    /*background-image: url('/assets/bg.jpg');*/
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:Montserrat;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    padding: 80px;
+    font-size: 50px;
+}
+
+/*======================NAVBAR====================================*/
+.navigation {
+    min-width: 100%;
+    list-style-type: none;
+    position: fixed;
+    background-color: rgb(32, 4, 58);
+    z-index: 999;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color:white;
+    display: block;
+}
+
+.navigation .nav-non-active a:hover {
+    background-color: white;
+    color: black;
+    transition: .5s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.navigation .nav-active{
+    background-color: blueviolet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*====================HOME====================================*/
+h1#h1home {
+    color:white;
+    font-size: 50px;
+    text-align: left;
+    font-family:Montserrat;
+    margin-top: 0px;
+    display: inline-block;
+    position:absolute;
+    top: 100px;
+    font-weight:1000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+p#p1home {
+    color:white;
+    font-size: 20px;
+    text-align:left;
+    font-family:Montserrat;
+    position: absolute;
+    top: 250px;
+    left: 85px;
+}
+
+.fotobg {
+    padding-left:10px ;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 350px;
+    height: 500px;
+    top: 100px;
+    left: 150px;
+    background-color:rgb(32, 4, 58);
+    stroke:rgb(32, 4, 58);
+    stroke-width: px;
+    position: absolute;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.fotoprofil{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.texthome {
+    background-color: none;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: 500px;
+}
+
+/*=================================JADWAL==============================*/
+h1#h1jadwal {
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+
+
+}
+
+table,th,td {
+    color: white;
+    padding:20px;
+    font-weight: bold;
+}
+
+table#tabeljadwal {
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.r1 {
+    background-color: rgb(31, 31, 31, 0.5);
+}
+
+.r2 {
+    background-color: rgb(70, 70, 70, 0.5);
+}
+
+/*================PENDIDIKAN===============================*/
+h1#h1pendidikan {
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    padding: 80px;
+    font-size: 50px;
+}
+
+.container {
+    width: 100%;
+}
+.circle {
+    background-color: white;
+    display: block;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+
+.line {
+    border-left: 10px solid white;
+    display: inline-block;
+    margin-left: 120px;
+    height: 100px;
+    position: absolute;
+}
+
+.step {
+    display: flex;
+}
+
+.content {
+    color: white;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.step.active .circle {
+    background: none;
+}
+.step.active .line {
+    visibility: hidden;
+}
+
+/*===============================Aktivitas*/
+h1#h1aktivitas {
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    padding: 80px;
+    font-size: 50px;
+}
+
+.container1aktivitas {
+    font-weight: bold;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 230px;
+    overflow: hidden;
+}
+
+.img1aktivitas {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    filter: brightness(60%);
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container1aktivitas:hover .overlay {
+    opacity: 1;
+}
+
+.container1aktivitas .img1aktivitas {
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+.container1aktivitas:hover .img1aktivitas{
+    transform: scale(1.5);
+}
+
+.text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container2aktivitas {
+    font-weight: bold;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 530px;
+    overflow: hidden;
+}
+.img2aktivitas {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    filter: brightness(60%);
+    display: block;
+}
+.container2aktivitas:hover .overlay2 {
+    opacity: 1;
+}
+
+.container2aktivitas .img2aktivitas {
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+.container2aktivitas:hover .img2aktivitas{
+    transform: scale(1.5);
+}
+.overlay2 {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container3aktivitas {
+    font-weight: bold;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 830px;
+    overflow: hidden;
+}
+.img3aktivitas {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    filter: brightness(60%);
+    display: block;
+}
+.container3aktivitas:hover .overlay3 {
+    opacity: 1;
+}
+
+.container3aktivitas .img3aktivitas {
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+.container3aktivitas:hover .img3aktivitas{
+    transform: scale(1.5);
+}
+.overlay3 {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*=========================footer*/
+
+footer{
+    background-color: rgb(32, 4, 58);
+    position: relative;
+    top: 700px;
+    width:100%;
+    height: 200px;
+    color:white;
+    text-align: center;
+}
+
+p#pfoot{
+    font-weight: bolder;
+    padding-top:25px;
+}
+p#pfoot2{
+    padding-top: 125px;
+}
+
+.media{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    padding-top: 50px;
+}
+li.icon{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.icon:hover{
+    color:blueviolet;
+    border: 1px solid blueviolet;
+    transition: .5s;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
